@@ -1,5 +1,4 @@
 var main = document.getElementById("main")
-var secondsLeft = 15
 var bgModal = document.querySelector(".bg-modal")
 var modalScores = document.querySelector(".modalScores")
 var modalHighScores = document.querySelector(".modal-highscores")
@@ -8,6 +7,8 @@ var buttonGoBack = document.querySelector(".button-go-back")
 var buttonStartQuiz = document.querySelector(".button-start-quiz")
 var closeButton = document.querySelector(".close")
 var modalQuiz = document.querySelector(".modal-quiz")
+var secondsLeft = 75
+var timeRemaining = document.querySelector(".time-remaining")
 
 //View Highscores
 
@@ -26,9 +27,21 @@ buttonGoBack.addEventListener("click", function() {
 buttonStartQuiz.addEventListener("click", function() {
     modalQuiz.style.display = "block";
     bgModal.style.display = "none";
-    console.log("quiz start")
+    quizTimer();
 })
 
+// Timer
+function quizTimer() {
+var secondsRemaining = setInterval(function() {
+    secondsLeft--;
+    timeRemaining.textContent = "Time remaining: " + secondsLeft;
+if(secondsLeft === 0) {
+    clearInterval(secondsRemaining);
+    modalHighScores.style.display = "block";
+    modalQuiz.style.display = "none";
+};
+}, 1000);
+}
 
 // Close functions
 
