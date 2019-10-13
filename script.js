@@ -92,14 +92,6 @@ if(secondsLeft === 0) {
 }, 1000);
 }
 
-// Score
-// function quizScore() {
-//     when you click the choice of the last array the time remaining is added to your score
-//     score += secondsLeft;
-//     scoreIsEl.append(score);
-//      
-// }
-
 
 //Close functions
 
@@ -124,4 +116,12 @@ submitScoreButton.addEventListener("click", function(event) {
     }
     localStorage.setItem("player", playerName);
 })
+
+// Score - pseudo-coded because I haven't figured out how to get it to work with the intervals
+// function quizScore() {
+//     when you click the choice of the last array the time remaining is added to your score
+//     score += secondsLeft;
+//     scoreIsEl.append(score);
+//      
+// }
   
