@@ -86,4 +86,25 @@ button {
     display: none;
 }
 
+/* Right and Wrong */
+.correct {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+    display: none;
+}
+
+.wrong {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+    display: none;
+}
+
+.quiz-li {
+    cursor: pointer;
+}
+/* Responsive Design */
+
+
 

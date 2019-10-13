@@ -14,7 +14,6 @@
             View Highscores
         </p>
         <P class="time-remaining">
-            Time Remaining: 
         </P>
     </div> 
     <div class="bg-modal">
@@ -27,13 +26,13 @@
         <h4 class="h4-score">All done!</h4>
         <h5 class="h5-score">Your score is: </h5>
         <p class="p-score">Enter your initials</p>
-        <input placeholder="Your initials here">
+        <input class="input-initials" placeholder="Your initials here">
         <button class="submit-score">See how you stack up</button>
     </div>
 
     <div class="modal-highscores">
         <h3 class="h3-highscores">Highscores</h3>
-        <li class="li-highscores"></li>
+        <ol class="ol-highscores"></ol>
         <button class="button-go-back">Go Back</button>
         <button class="clear-scores">Clear Scores</button>
     </div>
@@ -42,15 +41,26 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="quiz-h4">Question</h4>
-        <button class="button-quiz" id="answer-one">Answer 1</button>
-        <button class="button-quiz" id="answer-two">Answer 2</button>
-        <button class="button-quiz" id="answer-three">Answer 3</button>
-        <button class="button-quiz" id="answer-four">Answer 4</button>
+        <h5 class="question-title"></h5>
+        <ol class="quiz-ol">
+            <li class="quiz-li" id="choice1"></li>
+            <li class="quiz-li" id="choice2"></li>
+            <li class="quiz-li" id="choice3"></li>
+            <li class="quiz-li" id="choice4"></li>
+        </ol>
+        <div class="correct">
+            <hr>
+            <p>Correct!</p>
+        </div>
+        <div class="wrong">
+                <hr>
+            <p>Wrong!</p>
+        </div>
+        
     </div>
 
     
-
+    <script src="./questions.js"></script>
     <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
