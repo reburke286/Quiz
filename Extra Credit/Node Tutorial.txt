@@ -1,4 +1,4 @@
-Node cuts down on on time and resources since it's highly scalable. You can use JavaScript on front and backend, which allows you to use the same tools and best practices. Node works in non-blocking, or asynchronous, architecture, which allows the programs to run more efficiently.
+Node cuts down on on time and resources since it's highly scalable. You can use JavaScript on front and backend, which allows you to use the same tools and best practices. Node works in non-blocking, or asynchronous, architecture, which allows the programs to run more efficiently. You can run backend server functions on Node and test the results on a server you create.
 
 Installation 
 In your Git Bash, or Terminal for Mac's, enter node --version to see which version you're operating on. For an updated version go to "nodejs.org." Use the following commands for installation: 
@@ -42,6 +42,9 @@ app.query finds data using URL data, like in API calls
 An environmenet variable is a variable in an environment in which a process runs	
 Never trust user input - always use input validation like if (!input.name || input.name < 3) etc.
 JOI is a node package that makes user validation really easy to manipulate
+
+You can use resources like npmjs to study the syntax and code you're able to use across each package.
+Most data is available in an array or object, so depending, you'll need to PARSE or stringify. 
 
 
 
